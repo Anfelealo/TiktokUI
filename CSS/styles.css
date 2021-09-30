@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body .mainContainer{
+    width: 100vw;
+    height: 100vh;
+}
+
+.blankLeft{
+    margin-left: 15%;
+}
+
+.navBarContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 25%;
+}
+
+.navBarContainer > img{
+    width: 100px;
+    height: 30px;
+}
+
+.searchContainer{
+    display: flex;
+    background-color: rgb(150, 150, 150, 0.3);
+    width: 30%;
+    height: 40px;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#searchLine{
+    border: none;
+    border-left: 1px solid rgba(128, 128, 128, 0.747);
+    height: 30px;    
+}
+
+.searchInput{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    width: 80%;
+}
+
+.searchInput > img {
+    width: 15px;
+    height: 15px;
+    margin-right: 0px;
+    display: none;
+}
+
+.searchInput > input{
+    background: transparent;
+    border-color: transparent;
+    width: calc(100% - 15px);
+    caret-color: red;
+}
+
+.searchInput > input:focus{
+    outline: none;
+}
+
+.searchInput > input:focus + #closeIcon{
+    display: block;
+}
+
+.searchButton{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 50px 50px 0;
+}
+
+.searchButton > img{
+    width: 20px;
+    height: 20px;
+}
+
+.searchButton:hover{
+    background-color: rgb(150, 150, 150, 0.35);
+    cursor: pointer;
+}
+
+.actionsContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18%;
+    position: relative;
+    gap: 1px;
+}
+
+.actionsContainer > a{
+    color: black;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.actionsContainer > a:hover{
+    text-decoration: underline;
+}
+
+.actionsContainer > button{
+    background-color: rgba(254, 44, 85, 1.0);
+    border: none;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-radius: 2.5px;
+    padding: 10px 25px;
+}
+
+.actionsContainer > button:hover{
+    background-color: rgb(209, 37, 72);
+    cursor: pointer;
+}
+
+.actionsOptions > img{
+    width: 10px;
+    height: 20px;
+}
+
+.actionsOptions > img:hover + .tooltipContainer{
+    display: flex;
+}
+
+.tooltipContainer{
+    display: none;
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    background-color: white;
+    right: -20px;
+    box-shadow: -3px 0px 79px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 0px 79px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 0px 79px -10px rgba(0,0,0,0.75);
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+
+.tooltipContainer:hover{
+    display: flex;
+}
+
+.tooltipContainer > ul{
+    list-style-type: none;
+    width: 100%;
+}
+
+.listItem{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    gap: 10px;
+}
+
+.listItem img{
+   width: 20px;
+   height: 20px; 
+   margin-left: 10px;
+} 
+
+.listItem:hover{
+    background-color: rgb(214, 214, 214);
+}
+
+/*
+#headerLine{
+    border: none;
+    border-left: 1px solid rgba(255, 0, 0, 0.747);
+    height: 0px;
+}
+*/
